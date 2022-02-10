@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .caja {
+            margin: 25px auto;
+            width: 500px;
+            height: 500px;
+            background: blue;
+        }
+        .canvas{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja">
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
+    <script>
+        function draw() {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+
+                ctx.fillStyle="cyan";
+                ctx.fillRect(26, 25, 30, 20);
+                ctx.clearRect(28, 26, 26, 18);
+                //ctx.strokeRect(50, 50, 50, 50);
+            }
+        }
+        draw();
+    </script>
+</body>
+
+</html>

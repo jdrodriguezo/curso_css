@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            margin-top: 25Vh;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 250px;
+            background-color: lime;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .mensaje{
+            font-size: 20px;
+            color: white;
+            transition-duration: .5s;
+        }
+        .mensaje2{
+            font-size: 25px;
+            color: gray;
+            transition-duration: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <h1 id="msg" class="mensaje">
+            Analizando
+        </h1>
+        <h1 id="msg2" class="mensaje">
+            
+        </h1>
+    </div>
+    <script>
+        let i = 0;
+        let clase = () => {
+            if(i == 0){
+                i=1;
+                document.getElementById("msg").className = "mensaje";
+            } else {
+                i=0;
+                document.getElementById("msg").className = "mensaje2";
+            }
+            console.log("class: "+ document.getElementById("msg").className);
+        };
+        let animacion = () => {
+            let intervalo = setInterval(clase, 500);
+        }
+    </script>
+</body>
+</html>

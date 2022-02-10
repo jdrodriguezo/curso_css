@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+}
+.caja{
+/* truco para dibujar triangulos */
+border-top: 300px solid red;
+border-left: 500px solid green;
+border-right: 500px solid blue;
+width: 100px;
+    /* width: 300px;
+    height: 300px;
+    background-color: lightsalmon; */
+}

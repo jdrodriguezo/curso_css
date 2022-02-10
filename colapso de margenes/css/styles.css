@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+    margin: 0;
+}
+.header{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* tres formas de solucionar el colapso de margen en tre padre e hhijo */
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    border-top: 0.1px solid lightcoral;
+}
+.caja1,
+.caja2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+.caja1{
+    margin-bottom: 30px;
+}
+.title{
+    margin: 0;
+    margin-top: 50px;
+}
+/* Los margenes verticales colapsan
+recomendable ir separando los elementos con maring-botton 
+no juntar margin-button con margin-top porque dara muchos problemas*/

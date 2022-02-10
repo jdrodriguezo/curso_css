@@ -1,0 +1,10 @@
+body{
+    background-color: mediumorchid;
+    color: #333;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.6);
+}

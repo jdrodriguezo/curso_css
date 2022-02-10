@@ -1,0 +1,92 @@
+/* 
+
+BACKGROUND
+
+Es una propiedad que nos permite darle un fondo a las cajas
+
+la propiedad de background es un shorthand, la lista de propiedades que incluye background son: 
+
+    background-color: Nos permite establecer un color de fondo
+    background-image: Nos permite establecer una imagen de fondo
+    background-repeat: Nos permite establecer si un fondo se repite
+    background-position: Nos permite establecer la posicion del background
+    background-size: Nos permite establecer el tamaño del background
+    background-origin: Nos permite establecer desde donde se empezara a dibujar el fondo
+    background-clip: Nos permite establecer en que parte de la caja se dibujara el el fondo
+    background-attachment: Nos permite establecer si el background es relativo a la caja o al viewport
+
+
+*/
+
+body{
+    padding-bottom: 50em;
+    text-align: center;
+}
+
+[class^="bg-"]{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}
+/* Esta clase engloba a todos los div que empiecen con bg- */
+
+.bg-color{
+    background-color: red;
+}
+.bg-image{
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+}
+.bg-size{
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    background-size: contain;
+}
+.bg-repeat{
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+.bg-position{
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bg-origin{
+    /* redimenciona la imagen */
+    background-origin: border-box;
+    border: 10px dotted red;
+    padding: 25px;
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    background-size: contain;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+.bg-clip{
+    /* establece en que parte de la caja se va a dibujar */
+    /* muestra la imagen desde donde le decimos, solo oculta no redimenciona */
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    box-sizing: border-box;
+    border: 10px dotted red;
+    background-color: blue;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 25px;
+}
+.bg-multiple{
+    /* podemos usar todas juntas, aqui un ejemplo con dos fondos */
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png),
+    url(https://dam.cocinafacil.com.mx/wp-content/uploads/2018/08/beneficios-del-cafe.jpg)
+                    ;
+    background-size: 30%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right, center;
+}
+.bg-attachment{
+    background-image: url(https://i.blogs.es/be54be/firefoxlogo/450_1000.png);
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100%;
+}

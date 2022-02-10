@@ -1,0 +1,44 @@
+/* PSEUDOELEMENTO
+se utiliza para dar estilos a partes especofocas de un elemento
+la sintaxis es selector::pseudo-element( estilo )
+
+Existen 5 pseudoelementos
+    ::first-line (elemento de bloque)
+    ::first-letter (elemento de bloque)
+    ::before
+    ::after
+    ::selection
+
+    en ::before y ::after la propiedad contnet es obligatoria 
+    son elementos de linea por defecto
+    son hijos del elemento al que pertenecen
+
+*/
+
+.title::first-letter{
+    color: red;
+    font-size: 2em;
+}
+.text::first-line{
+    color: blue;
+}
+.linea{
+    display: block;
+}
+.linea::first-letter{
+    color: red;
+    font-size: 2em;
+    /* para usar  ::first-line y ::first-line hay que asegurarse que el elemento sea de bloque*/
+}
+.text::selection{
+    color: lime;
+    background-color: red;
+}
+.peso::before,
+.peso::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}

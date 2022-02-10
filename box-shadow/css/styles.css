@@ -1,0 +1,31 @@
+/* en esencia lo que hace es crear un clon de la caja r4espetando la forma de su box-model (ancho, alto , redondez) 
+
+la sintaxis del box-shadow se puede escribir de distintas formas segun lo que queramos conseguir
+los valores que le podemos poner son
+    offset-x: desplazamiento en x (obligatorio)
+    offset-y: desplazamiento en y (obligatorio)
+    blur-radius: desenfoque de la sombra
+    spread-radius: expansion de la sombra
+    color: el color de la sombra, sino lo especificamos lo hereda del elemento al que pertenece
+    inset: determina si la sombra sera interior o exterior
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 255, 255);
+    color: #fff;
+
+}
+.caja{
+    background-color: gray;
+    width: 200px;
+    padding: 50px;
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-radius: 30px; */
+   /*  box-shadow: inset 0px 0px 20px 0px rgb(0, 0, 0); */
+    box-shadow: 10px 10px red, 15px 15px blue, 20px 20px green;
+}

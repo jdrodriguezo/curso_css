@@ -1,0 +1,39 @@
+/* 
+clip.path: es una mascara que oculta partes de una caja
+    circle(): dibuja un circulo y puede tener una medida fija, cirvle(100px o podemos especificar un centro con at, circle(100 px at medidaX medidaY | palabrasClaveX palabrasClaveY))
+
+    ellipse() dibuja un borde transparente por dentro de la caja 
+        inset(all | Y X | top x bottom | top left bottom right) 
+        existe la opcion de redondear las esquinas, para ello despues de de los valores de inset pondremos round
+        inset(**** round all | top-left bottom-right top-right bottom-left | top-left top-right & bottom-left bottom-right | top-left top-right bottom-right bottom-left)
+
+    polygon(): especifica una serie de pontos (minimo 3) para definir la zona siendo el punto 0 0 la esquina superior izquierda
+
+    generador de clip-path: https://bennettfeely.com/clippy/
+
+
+*/
+
+body{
+    background-color: #333;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: lightcyan;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-item{
+    background-color: rgb(255, 160, 122);
+    width: 400px;
+    height: 400px;
+    border: rgb(0, 0, 0) 5px solid;
+    /* clip-path: inset(100px round 20px); */
+    clip-path: circle(100px at 100px 100px);
+    /* clip-path: ellipse(70px 100px at center center); */
+    /* clip-path: polygon(20px 20px, 380px 20px, 380px 380px, 360px 380px, 360px 40px, 40px 40px, 40px 360px, 360px 360px, 360px 380px, 20px 380px, 20px 40px); */
+    
+}

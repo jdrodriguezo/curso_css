@@ -1,0 +1,26 @@
+body{
+    background-color: #333;
+    color: lightcoral;
+}
+.caja{
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+}
+.caja-hijo{
+    position: absolute;
+    /* si utilizamos position absolute o fixed eso se ubica respecto al viewport(parte visible de la pantalla) 
+    si se utiliza position relative o sticky esto vuelve a la normalidad porque queda respecto a su contenedor
+    si s*/
+    width: 50%;
+    height: 50%;
+    background-color: lightseagreen;
+}
+
+/* 
+height es una propiedad que se bede usar con mucho cuidado, sino es necesario establecer el alto deja que el navegador lo calcule por el contenido el elemento
+se utiliza height auto
+pero si utilizas el height con % el navegador lo va tomar como auto y se adactara al tamaño del contenido lo que se indica es que el navegador sustituye esa medida en % por auto
+
+
+*/

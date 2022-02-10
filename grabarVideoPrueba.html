@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grabar vídeo de la webcam y audio del micrófono con JavaScript by parzibyte</title>
+    <style>
+        .container{
+            position: relative; 
+            margin: 0 auto;
+            height: 360px; 
+            width: 480px; 
+            /* border: 1px solid black; */
+        }
+        .video{
+            display: block;
+            margin: 0 auto;
+            height: 360px; width: 480px;
+            overflow: hidden;
+            border-radius: 8px;
+            transform: rotateY(180deg);
+            box-shadow: 0 0 10px 0px gray;
+        }
+        .tiempo{
+            position: absolute; 
+            background-color: limegreen; 
+            color: white;
+            top: 0;
+            right: 0;
+            padding: .25em;
+            margin: .5em;
+            font-weight: bold;
+            border-radius: 15px 0px 15px 15px;
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+<!--
+    * Grabar vídeo y audio obtenido del micrófono y cámara web
+    * con JavaScript, seleccionando el dispositivo de grabación de audio
+    * y el dispositivo de vídeo (cámara web) de una lista; 
+    * usando MediaRecorder y getUserMedia
+    * 
+    * @author parzibyte
+    * @see https://parzibyte.me/blog
+-->
+
+<body>
+    <div>
+        <!--label for="dispositivosDeAudio">Micrófono:</label><br>
+        <select name="dispositivosDeAudio" id="dispositivosDeAudio"></select>
+        <br><br>
+        <label for="dispositivosDeVideo">Cámara:</label><br>
+        <select name="dispositivosDeVideo" id="dispositivosDeVideo"></select-->
+        <div class="container">
+            <video muted="muted" id="video" class="video"></video>
+            <p id="duracion" class="tiempo" >
+                    00:00:00</p>
+        </div>
+        <br>
+        <button id="btnComenzarGrabacion">Comenzar</button>
+        <button id="btnDetenerGrabacion">Detener</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

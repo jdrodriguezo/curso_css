@@ -1,0 +1,44 @@
+/* 
+
+flex-blox
+aja X: main start y main end
+aja Y: cross start y cross end
+
+esta propiedad la tendra el contenedor pero solo afecta a los elementos es este contenga.
+
+display: flex;
+    convierte el ontenedor en un contexto para flex-box y hace que el contenedor sea un elemento de bloque para los elementos que lo rodean
+
+display: inline-flex;
+    convierte el contenedor en un contexto para flex-box y hace que el contenedor sea un elemento en linea para los elementos que lo rodean
+
+flex-direction: row(default) | row-reverse | column | column-reverse
+    modifica la direccion y cual es el eje pricipal.
+    por defecto es row(horizontal de izquierda a derecha)
+    row-reverse (horizontal de derecha a izquierda)
+    column vertical de arriba abajo
+    column-reverse vertical de abajo arriba
+
+flex-wrap: no-wrap(default) | wrap | wrap-reverse
+    controla si los elementos saltaran de linea o no
+    no-wrap es el valor por defecto, un contenedor flex va hacer que todos los elementos se queden en una linea sino lo espesificamos lo contrario wrap hace que los elementos que no quepan en una linea(manteniendo sus dimensiones, si las tuviera) salten a la linea inferior
+    wrap-reverse hace lo mismo que wrap pero en lugar que salten a la linea inferior, hace que salten a la linea superior.
+
+*/
+
+.flex-container{
+    background-color: coral;
+    padding: .5em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 30px;
+    height: 30px;
+    margin: .5em;
+    line-height: 30px;
+    color: cornsilk;
+    text-align: center;
+    background-color: purple;
+}

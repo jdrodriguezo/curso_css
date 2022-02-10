@@ -1,0 +1,24 @@
+/*
+Es la capacidad que tienen algunos elementos de heredar alginas propiedades de sus elementos contenedores(padres,abuelos,etc)
+*/
+body{
+    background-color: #333;
+}
+.title{
+    color: cyan;
+    font-size: 10px;
+}
+.text{
+    color: green;
+}
+.link{
+    /*inherit se usa para forzar la herencia*/
+    color: inherit;
+}
+.list{
+    color: indianred;
+}
+.list-item-extra{
+    /*Se usa para evitar la herencia*/
+    color: initial;
+}

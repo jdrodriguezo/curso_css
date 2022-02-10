@@ -1,0 +1,122 @@
+/* SELECTORES */
+
+/*
+SELECTORES SIMPLES
+    SELECTORES ELEMENTALES
+        SELECTOR UNIVERSAL -> *
+        SELECTOR DE TIPO O ETIQUETA -> NOMBRE DE LA ETIQUETA
+    SELECTORES DE ATRIBUTO
+        ID -> ID DEL ELEMENTO
+        CLASES -> CLASE DEL ELEMENTO
+        OTRO ATRIBUTOS
+            [ATRIBUTO]
+            [ATRIBUTO=VALOR]
+            [ATRIBUTO^=VALOR]
+            [ATRIBUTO*=VALOR]
+            [ATRIBUTO$=VALOR]
+            [ATRIBUTO|=VALOR]
+SELECTORES COMPUESTOS
+    SELECTORES AGRUPADOS
+        SE AGRUPÁN LOS SELECTORES SEPARADOS POR COMAS Y SE ESCRIBE EL ESTILO UNA SOLA VEZ
+    SELECTORES COMBINADOS
+        SELECTORES DESCENDIENTES
+        SELECTORES DE HERMANO SIGUIENTE 
+    PSEUDOCLASES Y PSEUDOELEMENTOS
+*/
+
+/*
+selector univarsal *
+-- no se recomenda usar
+*{
+    background-color: burlywood;
+}
+
+selectores de tipo o etiqueta
+h1{
+    background-color: steelblue;
+}
+p{
+    background-color: tan;
+}
+label{
+    background-color: rebeccapurple;
+}
+hr{
+    background-color: red;
+}
+button{
+    background-color: blue;
+}
+*/
+
+/* selectores de ID: no se recomienda utilizar debido a que los estilos css deberian de ser reutilizables
+#title{
+    background-color: red;
+}
+
+selectores de clase, son los que mas se usan debido aque se pueden reutilizar
+.title{
+    background-color: saddlebrown;
+}
+.text{
+    background-color: skyblue;
+}
+
+aelectores de otros atributos
+[href]{
+    background-color: slateblue;
+}
+[href="www.google.com"]{
+    background-color: yellow;
+}
+[href^="git"]{
+    background-color: springgreen;
+}
+[href*="face"]{
+    background-color: mediumorchid;
+}
+[href$="rosa"]{
+    background-color: pink;
+}
+[lang|="es"]{
+    background-color: brown;
+}
+
+selector agrupados
+.text,
+.text-1,
+.text-2,
+.text-3{
+    background-color: burlywood;
+}
+
+SELECTORES COMBINADOS DESENCIENDTES
+div .text-2{
+    background-color: chartreuse;
+}
+
+SELECTOR DE HERMANO SIGUIENTE +
+.text-3 + .title-2{
+    background-color: tomato;
+}
+
+SELECTOR DE TODOS LOS HERMANOS SIGUIENTES
+.text ~ p{
+    background-color: violet;
+}
+
+SELECTOR DE HIJO DIRECTO >
+
+.container > p{
+    background-color: cyan;
+}
+
+
+ESPECIFICIDAD: como funciona css, se trata de cuan especifico es un selector para saber que dibujar (FORMULA QUE USA EL NAVEGADOR PARA SABER QUE APLICAR)
+    ETIQUETAS Y SEUDOELEMENTOS: 001
+    CLASES, ATRIBUTOS Y SEUDOCLASES: 010
+    IDS: 100
+    ESTILOS EN LINEA(LOS QUE ESTAN DIRACTAMENTE EN LAS ETIQUETAS HTML): 1000
+
+
+*/

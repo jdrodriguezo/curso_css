@@ -1,0 +1,21 @@
+body{
+    background-color: #333;
+    color: lightcoral;
+}
+.caja{
+    width: auto;
+    margin: 0 50px;
+    height: 250px;
+    background-color: lightgreen;
+}
+.caja-hijo{
+    width: auto;
+    height: 25px;
+    margin-left: 100px;
+    background-color: lightseagreen;
+}
+/* 
+cuando utilizamos width podemos utilizar % o auto pero con % hay un proble si utilizamos la propiedad margin
+debido a que va segir ocupando el % indicado pero corrido hacia cualñquier lado debido a la propiedad margin
+en este caso se suele usar auto y de esa forma se soluciona ese problema ya que se deja al navegador calcular el tamaño apropieda dependiendo del contenedor
+*/

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+}
+.title{
+    /*para utulizar la propiedad margin primero se debe definir un tamaño*/
+    background-color: lightsalmon;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 40px;
+}
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /*margin: 100px 50px 10px 200px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline{
+    background-color: lightcyan;
+    /*Los elementos de linea solo tienn margenes en horizontal*/
+    margin-left: 100px;
+}
+.botones{
+    background-color: steelblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    width: 300px;
+}
+.boton{
+    margin-left: 50px;
+    padding: 25px 50px;
+    border: 20px solid red;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red;
+    border-right-color: pink;
+    border-right-width: 15px;
+    border-style: outset;
+}
+.caja{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 5px solid red;
+    /* box-sizing: border-box: Se usa para que sume todas las medidas de la caja y distribuya el tamaño
+    con esto la caja siempre tendra el mismo tamaño*/
+    /*
+    Una buena practica es utiñixar este atributo en un selector universal7 universal
+    box-sizing: border-box;*/
+}

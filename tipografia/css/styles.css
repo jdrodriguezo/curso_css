@@ -1,0 +1,39 @@
+/* 
+
+TIPOGRAFIAS
+
+A los tipos de letras que existen se les denomina fuentes o tipografia
+podemos dividirlo en dos grupos: 
+    - Familias tipograficas: fuentes especificas con nombre(Arial, Time New Roman, Verdana,...)
+    - Familias genericas: fuentes segun sus caracteristicas(serif, sans-serif, cursive, ...)
+
+Cuando elegimos una fuente debemos poner fuentes de reserva.
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+Si una fuente tipografica tiene mas de una palabra separada por espacios en su nombre, este deberia ir entre comillas 
+
+Las propiedades para cambiar el estilo de las fuentes/textos son: 
+
+    - font-family
+    - font-size
+    - font-weigth
+    - font-style
+
+    - text-transform
+    - text-align
+    - text-decoration
+    - text-indent
+
+    - line-height
+    - letter-spacing
+
+*/
+.titulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+}
+.span{
+    font-size: 200%;
+}

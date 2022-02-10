@@ -1,0 +1,69 @@
+/* 
+Normalmente necesitamos resetear los estilos por defecto de una lista
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+
+hay tres propiedades para las listas, se pueden aplicar al padre o a los elementos de la lista
+
+list-style-type: establece el estilo de viñeta
+    disc
+    circle
+    square
+    decimal
+    decimas-leading-zero
+    lower-roman
+    upper-roman
+    lower-greek
+    lower-latin
+    upper-latin
+    armenia
+    georgian
+    lower-alpha
+    upper-alpha
+
+list-style-position: hace que las viñetas se coloquen por dentro o por fuera del elemento
+    outside | inside
+
+list-style-image: pone una imagen en lugar de una viñeta, no se suele utilizar porque hay formas mucho mas eficaces de hacerlo
+    url(imagen)
+
+normalmente se suele usar el shorthand list-style
+
+*/
+
+.list{
+    list-style-type: none;/* este es el que aparece por defecto */
+}
+/* 
+.list{
+    list-style-image: url(https://fotos-themonkeybusiness.s3.eu-west-3.amazonaws.com/wp-content/uploads/2021/04/05141814/imagenes-de-check-list.png);
+}
+
+.item-list::before{
+    content: '';
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-image: url(https://fotos-themonkeybusiness.s3.eu-west-3.amazonaws.com/wp-content/uploads/2021/04/05141814/imagenes-de-check-list.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.5em ;
+} */
+
+.item-list{
+    background-image: url(https://fotos-themonkeybusiness.s3.eu-west-3.amazonaws.com/wp-content/uploads/2021/04/05141814/imagenes-de-check-list.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2em ;
+}
+
+.list{
+    /* resetear lista */
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+    list-style: none;
+}

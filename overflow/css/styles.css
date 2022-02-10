@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.caja{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+    color: #000;
+    border-radius: 50px;
+    overflow: hidden;
+    /* overflow: auto; */
+}
+.text{
+  /*   width: 350px; */ 
+  margin: 0;
+}
+.caja1, .caja2{
+    padding: 25px;
+    background-color: lightsalmon;
+}
+/*
+Overflow
+    Es la propiedad que controla que debe hacer la caja cuando su contenido se desborda
+        visible: es el valor por defecto
+        hidden: el contenido que se desborde no se vera. si ponemos este valor en un solo eje el otro se pondra automaticamente en el valor scroll.
+        scroll: apareceran barras scroll en el eje asignado o en ambos (x, y o ambos) 
+        auto: Apareceran barras scroll en el caso de que haga falta
+*/

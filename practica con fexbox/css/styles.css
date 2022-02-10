@@ -1,0 +1,93 @@
+body{
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8,#3a1957);
+    background-repeat: no-repeat;
+    margin: 0;
+    color: #eee;
+    height: 100vh;
+}
+
+img{
+    max-width: 80%;
+    clip-path: circle(49%);
+    width: 400px;
+}
+
+.card{
+    background-color: #333;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    margin: 2em auto;
+}
+
+.card-left{
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(1, 90, 255, 0.473);
+    padding: .5rem 0;
+}
+
+.card-right{
+    width: 80%;
+    padding: 0 1rem;
+}
+
+.card-title{
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-names input {
+    width: 90%;
+}
+
+.form-label{
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.form-input,
+.form-textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    color: inherit; /* hereda del padre */
+}
+
+.form-textarea{
+    resize: none;
+    border: 1px solid #eee;
+    flex-basis: 100px;
+}
+
+.form-submit{
+    width: 40%;
+    background: rgb(0, 183, 255);
+    border: none;
+    padding: .8rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: inherit;
+}

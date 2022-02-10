@@ -1,0 +1,14 @@
+body{
+    background-color: mediumorchid;
+    color: #333;
+}
+.main{
+    color: yellowgreen;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    border: 5px solid currentColor;
+    /* currentcolor hereda el color de la propiedar color */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	
+}
+.caja{
+	width: 448px;
+	height: 252px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 30vh;
+    overflow: hidden;
+    border-radius: 15px;
+    /* clip-path: ellipse(20% 40% ); */
+    position: absolute;
+    transform: rotateY(180deg);
+}
+.marco{
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    /* opacity: 10%; */
+    top: 0;
+    position: absolute;
+    outline: 10px solid rgb(255, 5, 5);
+    /* border: 10px solid white; */
+    /* clip-path: ellipse(20% 40% ); */
+}
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <div class="marco"></div>
+        <video id="video" src="" autoplay="true" data-uid="53" width="448" height="252" >
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+    </div>
+      <script>
+          navigator.mediaDevices.getUserMedia({audio: false, video: true}).then((stream)=>{
+              console.log(stream)
+              let video = document.getElementById('video')
+
+              video.srcObject = stream
+          }).catch((err)=>console.log(err))
+      </script>
+</body>
+</html>

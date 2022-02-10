@@ -1,0 +1,57 @@
+/* 
+POSITION
+La propiedad position nos permite posicionar los elementos. hay algunos conceptos que se deben conocerpara entender position
+
+Flujo de renderizado: por reglas generales los elementos se dibujan de isquierda a derecha y de arriba abajo.
+El punto 0,0 de los elementos, por norma deneral es la esquina superior izquierda
+
+Espacio reservado: es el espacio que tiene un elemento asignado en el navegador
+
+Elemento posicionado: esto significa que el elemento tiene la propiedad position con un  valor distinto de STATIC,
+que es el valor que tiene esta propiedad por defecto
+
+Stackin context: contexto de apilamiento. es el orden en el que se apilan las cajas que se superponen
+
+al posicionar un elemento se habilitan 5 propiedades que podemos utiizar para mover los elementos en los tres ejes
+
+    top: el elemento se movera desde la parte superior la distancio que le hayamos indicado
+
+    right: el elemento se movera desde la parte derecha la distancia que le hayamos indicado
+
+    bottom: el elemento se movera desde la parte inferior la distancia que le hayamos indicado
+
+    left: el elemento se movera desde la parte izquierda la distancia que le hayamos indicado
+
+    z-index: nos permite mover el elemento en el contexto de apilamiento( eje z)
+
+    NOTA: si a un elemento le declaramos la propiedad top y/o left, las propiedades bottom y/o right no funcionaran
+
+los posibles valores que le podemos dar a position son.
+    static: es el valor que tiene por defecto un elemento, con este valor no esta posicionado y por lo cual no podemos moverlo
+
+    relative: el elemento mantendra su posicion y medidas en el flujo de renderizado y mantendra su espacio reservado. si lo movemos lo hara usando su posicion en el html como punto de referencia
+
+    fixed: el elemento perdera sus medidas y su espacio reservado. si lo movemos usara el elemento htmlde referencia y ademas se quedara fijo en esa pisicion aunque hagamos scroll
+
+    sticky: es una mezcla de position relative y fixed. con este tipo de posicionamento los valores top, left, bottom y right no sirven para mover el elemento sino para indicarle en que punto pasara a tener un comportamiento de posicionamento fixed, hasta llegar a ese punto se comportara como si tuviera relative
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+}
+.caja-1{
+    background-color: lightcoral;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.caja-2{
+    background-color: lightgreen;
+}
